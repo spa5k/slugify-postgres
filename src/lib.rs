@@ -75,6 +75,14 @@ mod tests {
             crate::slug_rand("the 101 dalmatians").len(),
             "the-101-dalmatians".len() + 5
         );
+        assert_eq!(
+            crate::slug_rand_c("the 101 dalmatians", 10).len(),
+            "the-101-dalmatians".len() + 10
+        );
+        assert_eq!(
+            crate::slug_rand_sep_c("the 101 dalmatians", "_", 10).len(),
+            "the-101-dalmatians".len() + 10
+        );
     }
 
     #[pg_test]

@@ -1,7 +1,8 @@
 [package]
-name = "pg_slugify"
-version = "0.0.0"
+name = "slugify"
+version = "0.0.1"
 edition = "2021"
+description = "PostgreSQL Extension to generate various variant of Slugs from a string."
 
 [lib]
 crate-type = ["cdylib"]
